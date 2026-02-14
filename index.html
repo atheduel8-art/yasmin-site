@@ -10,6 +10,7 @@
     <link rel="icon" href="icon.png">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -60,7 +61,7 @@
     </style>
 </head>
 <body>
-
+    <!-- CABEÇALHO DO SITE -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm" style="background-color: #F9F5F2; border-bottom: 2px solid #e9ecef;">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#" style="color: #B2916F;">Yasmin Assis | Estrategista Digital</a>
@@ -75,8 +76,8 @@
         </div>
       </div>
     </nav>
-
-    <section class="py-5 bg-light"> 
+    <!-- FRASE INICIAL DO SITE -->
+    <section class="py-5" data-aos="fade-up"> 
         <div class="container">
             <div class="row align-items-center"> 
                 <div class="col-lg-6 col-md-6 order-md-1 order-2 text-center text-md-start"> 
@@ -91,11 +92,11 @@
             </div>
         </div>
     </section>
-
+    <!-- FRASE NO MEIO DO SITE: "Seu negócio não precisa de mais barulho." -->
     <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-md-6 text-center mb-4 mb-md-0">
-                <img src="produto.jpg" class="img-fluid rounded shadow-lg" alt="maquinas" style="max-width: 450px;">
+                <img src="produto.jpg" data-aos="fade-left" class="img-fluid rounded shadow-lg">
             </div>
             <div class="col-md-6">
                 <h2 class="display-5 fw-bold mb-4" style="color: #3d3a37;">Seu negócio não precisa de mais barulho.</h2>
@@ -116,64 +117,93 @@
             <p class="text-muted">Resultados reais de quem decidiu se posicionar no digital</p>
         </div>
 
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm p-3">
-                    <div class="card-body">
-                        <div class="mb-3" style="color: #B2916F;">
-                            <i class="fas fa-quote-left fa-2x"></i>
-                        </div>
-                        <p class="text-secondary texto-justificado">"A Yasmin conseguiu traduzir exatamente a autoridade que eu queria passar. Meu perfil no Instagram hoje atrai o público certo e as consultas aumentaram consideravelmente."</p>
-                        <hr class="border-light">
-                        <div class="d-flex align-items-center">
-                            <div class="ms-0">
-                                <h6 class="mb-0 fw-bold">Dra. Amanda Silva</h6>
-                                <small class="text-muted">Advogada Corporativa</small>
+        <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <div class="card border-0 shadow-sm p-4">
+                                <div class="card-body">
+                                    <div class="mb-3" style="color: #B2916F;">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="lead text-secondary">"A Yasmin conseguiu traduzir exatamente a autoridade que eu queria passar. Meu perfil hoje atrai o público certo e as consultas aumentaram consideravelmente."</p>
+                                    <h6 class="mt-4 fw-bold mb-0">Dra. Amanda Silva</h6>
+                                    <small class="text-muted">Advogada Corporativa</small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <div class="card border-0 shadow-sm p-4">
+                                <div class="card-body">
+                                    <div class="mb-3" style="color: #B2916F;">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="lead text-secondary">"Eu tinha receio de aparecer, mas a estratégia traçada me deixou segura. O retorno sobre o investimento foi muito mais rápido do que eu esperava."</p>
+                                    <h6 class="mt-4 fw-bold mb-0">Lucas Oliveira</h6>
+                                    <small class="text-muted">Consultor Financeiro</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <div class="card border-0 shadow-sm p-4">
+                                <div class="card-body">
+                                    <div class="mb-3" style="color: #B2916F;">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="lead text-secondary">"Eu tinha receio de aparecer, mas a estratégia traçada me deixou segura. O retorno sobre o investimento foi muito mais rápido do que eu esperava."</p>
+                                    <h6 class="mt-4 fw-bold mb-0">Lucas Oliveira</h6>
+                                    <small class="text-muted">Consultor Financeiro</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <div class="card border-0 shadow-sm p-4">
+                                <div class="card-body">
+                                    <div class="mb-3" style="color: #B2916F;">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="lead text-secondary">"Excelente profissional! Minha empresa hoje é vista como referência no setor graças ao trabalho de posicionamento da Yasmin."</p>
+                                    <h6 class="mt-4 fw-bold mb-0">Fernanda Costa</h6>
+                                    <small class="text-muted">CEO da TechSolutions</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm p-3">
-                    <div class="card-body">
-                        <div class="mb-3" style="color: #B2916F;">
-                            <i class="fas fa-quote-left fa-2x"></i>
-                        </div>
-                        <p class="text-secondary texto-justificado">"Eu tinha receio de aparecer, mas a estratégia traçada me deixou segura. O retorno sobre o investimento foi muito mais rápido do que eu esperava."</p>
-                        <hr class="border-light">
-                        <div class="d-flex align-items-center">
-                            <div class="ms-0">
-                                <h6 class="mb-0 fw-bold">Lucas Oliveira</h6>
-                                <small class="text-muted">Consultor Financeiro</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm p-3">
-                    <div class="card-body">
-                        <div class="mb-3" style="color: #B2916F;">
-                            <i class="fas fa-quote-left fa-2x"></i>
-                        </div>
-                        <p class="text-secondary texto-justificado">"Excelente profissional! Entende muito de posicionamento de marca. Minha empresa hoje é vista como referência no setor graças ao trabalho da Yasmin."</p>
-                        <hr class="border-light">
-                        <div class="d-flex align-items-center">
-                            <div class="ms-0">
-                                <h6 class="mb-0 fw-bold">Fernanda Costa</h6>
-                                <small class="text-muted">CEO da TechSolutions</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
     </div>
 </section>
+    <!-- FIM DOS COMENTARIOS -->
 
+    <!-- PLANOS E VALORES -->
     <section class="py-5 bg-light" id="Planos">
         <div class="container text-center mb-5">
             <h2 class="fw-bold" style="color: #3d3a37;">Nossos Planos</h2>
@@ -182,7 +212,7 @@
 
         <div class="container">
             <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Essencial</h5>
@@ -197,7 +227,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in">
                     <div class="card h-100 shadow-lg border-0" style="background-color: #B2916F; color: white;">
                         <div class="card-body p-4 text-center">
                             <span class="badge bg-white text-dark mb-2">MAIS BUSCADO</span>
@@ -214,7 +244,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Exclusivo</h5>
@@ -232,6 +262,7 @@
         </div>
     </section>
 
+    <!-- RODAPÉ DO SITE -->
     <footer class="py-5 bg-dark text-white">
         <div class="container">
             <div class="row align-items-center">
@@ -257,5 +288,14 @@
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FLUIDEZ DO SITE -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Velocidade da animação (1 segundo)
+    once: true      // A animação acontece apenas uma vez ao descer
+  });
+</script>
 </body>
 </html>
